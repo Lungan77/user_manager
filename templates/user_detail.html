@@ -1,19 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User Detail</title>
+    <link rel="stylesheet" href={{url_for('static', filename='style.css' )}}>
 </head>
+
 <body>
-    <h1>User Details</h1>
-    <p>ID: {{ user[0] }}</p>
-    <p>Username: {{ user[1] }}</p>
-    <p>Email: {{ user[2] }}</p>
-    <p>Role: {{ user[3] }}</p>
-    <p>Registration Date: {{ user[4] }}</p>
-    <a href="/update_user_form/{{ user[0] }}">Edit</a> |
-    <a href="/delete_user_form/{{ user[0] }}">Delete</a> |
-    <a href="/users">Back to Users</a>
+    <div class="center">
+        <h1>User Details</h1>
+        <p>ID: {{ user[0] }}</p>
+        <p>Username: {{ user[1] }}</p>
+        <p>Email: {{ user[2] }}</p>
+        <p>Role: {{ user[3] }}</p>
+        <p>Registration Date: {{ user[4] }}</p>
+        <a href="/update_user_form/{{ user[0] }}">Edit</a> |
+        <a href="/delete_user_form/{{ user[0] }}">Delete</a> |
+        <a href="/users">Back to Users</a>
+    </div>
 </body>
+
 </html>
